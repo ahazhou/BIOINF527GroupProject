@@ -1,3 +1,13 @@
-<p>
-  tree-questions works!
-</p>
+<div id="questions-container">
+  <h1>{{question.title}}</h1>
+  <br>
+  <div *ngFor="let choice of question.choices">
+    <div id="choice-container">
+      <p>{{choice}}</p>
+    </div>
+  </div>
+</div>
+<div id="back-reset-container">
+  <button>Reset</button>
+  <button>Previous</button>
+</div>

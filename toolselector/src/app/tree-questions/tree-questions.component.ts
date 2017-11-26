@@ -6,8 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./tree-questions.component.css']
 })
 export class TreeQuestionsComponent implements OnInit {
-
-  constructor() { }
+  question1 = {
+    title: "What type of data do you have?",
+    choices: ["choice A", "choice B", "choice C", "Other"]
+  }
+  question = this.question1
+  constructor() {}
 
   ngOnInit() {
   }
