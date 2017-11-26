@@ -9,6 +9,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { AppRoutingModule } from './/app-routing.module';
 import { HomePageComponent } from './home-page/home-page.component';
 import { CopyrightMarkComponent } from './copyright-mark/copyright-mark.component';
+import { TreeQuestionsComponent } from './tree-questions/tree-questions.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { CopyrightMarkComponent } from './copyright-mark/copyright-mark.componen
     QuestionsPageComponent,
     PageNotFoundComponent,
     HomePageComponent,
-    CopyrightMarkComponent
+    CopyrightMarkComponent,
+    TreeQuestionsComponent
   ],
   imports: [
     NgbModule.forRoot(),
