@@ -1,0 +1,15 @@
+div{
+    height: 30px;
+    width: 100%;
+    margin: auto;
+    position: fixed;
+    bottom: 0;
+    background: rgba(238, 238, 238, 0.3);
+}
+
+div > p{
+    text-align: center;
+    color: #dddddd;
+    margin: auto;
+    line-height: 30px;
+}

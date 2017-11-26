@@ -1,0 +1,19 @@
+nav{
+    position: absolute;
+    width: 100%;
+}
+nav > a{
+    font-size: 30px;
+}
+nav > a:hover{
+    color: #a7a7a7;
+}
+nav > div > ul > li{
+    font-size: 30px;
+    text-align: center;
+    margin-right: 20px;
+}
+nav > div > ul > li:hover{
+    background: #d6dbe9;
+    color: #a7a7a7;
+}
