@@ -5,7 +5,11 @@
     width: 500px;
     height: 150px;
 }
-#home-page-container > h1{
+#home-page-container > a{
+    text-decoration: none;
+    display: block;
+    color: black;
     text-align: center;
     line-height: 150px;
+    font-size: 70px;
 }
