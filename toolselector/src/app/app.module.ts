@@ -10,6 +10,7 @@ import { AppRoutingModule } from './/app-routing.module';
 import { HomePageComponent } from './home-page/home-page.component';
 import { CopyrightMarkComponent } from './copyright-mark/copyright-mark.component';
 import { TreeQuestionsComponent } from './tree-questions/tree-questions.component';
+import { ToolOverviewComponent } from './tool-overview/tool-overview.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { TreeQuestionsComponent } from './tree-questions/tree-questions.componen
     PageNotFoundComponent,
     HomePageComponent,
     CopyrightMarkComponent,
-    TreeQuestionsComponent
+    TreeQuestionsComponent,
+    ToolOverviewComponent
   ],
   imports: [
     NgbModule.forRoot(),
