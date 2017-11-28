@@ -3,13 +3,35 @@
     top:0;left:0;right:0;bottom:0;
     margin: auto;
     width: 500px;
-    height: 150px;
+    height: 300px;
 }
-#home-page-container > a{
-    text-decoration: none;
-    display: block;
-    color: black;
+
+#home-page-container > h1{
+    font-size: 60px;
+}
+
+#home-page-container > h1, h4{
+    margin: auto;
     text-align: center;
-    line-height: 150px;
-    font-size: 70px;
+}
+
+#home-page-container > div{
+    width: 200px;
+    height: 70px;
+    border: none;
+    background: #62dd6d;
+    margin: 50px auto auto auto;
+}
+
+#home-page-container > div:hover{
+    background: #62dd6c94;
+}
+
+#home-page-container > div > a, h5{
+    text-decoration: none;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    line-height: 70px;
+    margin: 0px;
 }
