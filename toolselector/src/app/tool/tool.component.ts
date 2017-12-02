@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-tool',
@@ -6,10 +7,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./tool.component.css']
 })
 export class ToolComponent implements OnInit {
-
-  constructor() { }
+  toolname: string
+  constructor(private route: ActivatedRoute) {
+    this.toolname = route.snapshot.params['id'];
+  }
+  
 
   ngOnInit() {
+    
   }
 
 }
