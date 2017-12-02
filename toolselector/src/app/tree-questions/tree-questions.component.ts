@@ -42,6 +42,15 @@ export class TreeQuestionsComponent implements OnInit {
     }
   }
 
+  public previousQuestion = (current) =>{
+    if(current.name.slice(0,-1).length == 1){
+      window.location.href = "/home"
+    }
+    else{
+      this.question = this[current.name.slice(0,-1)]
+    }
+  }
+
   question = this.q0
   constructor() {}
 
