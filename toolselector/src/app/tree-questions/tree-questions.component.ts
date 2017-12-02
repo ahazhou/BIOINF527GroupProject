@@ -6,30 +6,36 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./tree-questions.component.css']
 })
 export class TreeQuestionsComponent implements OnInit {
-  q0 = {
+  public q0 = {
     name: "q0",
     title: "What type of RNA sequencing do you want to do?",
     choices: ["Data Preprocessing", "Data Analysis", "Data Processing", "None of the above"]
   }
-  q00 = {
+  public q00 = {
     name: "q00",
     title: "What type of RNA data preprocessing do you want to do?",
-    choices: ["Experimental Design", "Base Calling", "Read Quality Control", "None of the above"]
+    choices: ["Experimental Design", "Base Calling", "Read Quality Control", "None of the above"],
+    links: ["/tool", "/tool", "/tool"]
   }
-  q01 = {
+  public q01 = {
     name: "q01",
     title: "What type of RNA data analysis do you want to do?",
-    choices: ["Exon Skipping Detection", "Time Couse Analysis", "Transposable Element Detection"]
+    choices: ["Exon Skipping Detection", "Time Couse Analysis", "Transposable Element Detection", "None of the above"],
+    links: ["/tool", "/tool", "/tool"]
   }
-  q02 = {
+  public q02 = {
     name: "q02",
     title: "What type of RNA data processing do you want to do?",
-    choices: ["Normalization", "Known Transcript Alignment", "Read Alignment"]
+    choices: ["Normalization", "Known Transcript Alignment", "Read Alignment", "None of the above"],
+    links: ["/tool", "/tool", "/tool"]
   }
 
   public changeQuestion = (index, name) =>{
-    if(String(name+index).length > 3 || String(name+index).length <= 0){
-      
+    if(index == this[name].choices.length - 1){
+      window.location.href = "/not-available-yet"
+    }
+    else if(this[String(name+index)] == null){
+      window.location.href = this[name].links[index]
     }
     else{
       this.question = this[String(name+index)]

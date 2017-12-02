@@ -12,6 +12,7 @@ import { CopyrightMarkComponent } from './copyright-mark/copyright-mark.componen
 import { TreeQuestionsComponent } from './tree-questions/tree-questions.component';
 import { ToolOverviewComponent } from './tool-overview/tool-overview.component';
 import { ToolComponent } from './tool/tool.component';
+import { NotavailableyetComponent } from './notavailableyet/notavailableyet.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { ToolComponent } from './tool/tool.component';
     CopyrightMarkComponent,
     TreeQuestionsComponent,
     ToolOverviewComponent,
-    ToolComponent
+    ToolComponent,
+    NotavailableyetComponent
   ],
   imports: [
     NgbModule.forRoot(),

@@ -8,6 +8,7 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { TreeQuestionsComponent } from './tree-questions/tree-questions.component';
 import { ToolOverviewComponent } from './tool-overview/tool-overview.component';
 import { ToolComponent } from './tool/tool.component';
+import { NotavailableyetComponent } from './notavailableyet/notavailableyet.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -16,6 +17,7 @@ const routes: Routes = [
   { path: 'tree-questions', component: TreeQuestionsComponent },
   { path: 'home', component: HomePageComponent },
   { path: 'questions-page', component: QuestionsPageComponent },
+  { path: 'not-available-yet', component: NotavailableyetComponent},
   { path: '**', component: PageNotFoundComponent }
 ];
 

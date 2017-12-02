@@ -1,0 +1,16 @@
+#not-available-container{
+    height: 300px;
+    width: 500px;
+    position: absolute;
+    top:0;left:0;right:0;bottom:0;
+    margin: auto;
+}
+
+#not-available-container > h1{
+    font-size: 50px;
+}
+
+#not-available-container > h1,h3,h5{
+    text-align: center;
+    margin: 0px auto 30px auto;
+}
