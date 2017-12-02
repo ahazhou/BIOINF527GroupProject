@@ -1,10 +1,8 @@
 <div id="questions-container">
   <h1>{{question.title}}</h1>
   <br>
-  <div *ngFor="let choice of question.choices">
-    <div id="choice-container">
-      <p>{{choice}}</p>
-    </div>
+  <div class="choice-container" *ngFor="let choice of question.choices; let i = index" (click)="changeQuestion(i,question.name)">
+    <p>{{choice}}</p>
   </div>
 </div>
 <div id="back-reset-container">

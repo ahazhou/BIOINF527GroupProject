@@ -12,20 +12,20 @@
     margin-top: 20px;
 }
 
-#choice-container{
+.choice-container{
     width: 100%;
     min-height: 50px;
     margin: 5px 10px;
     background: rgb(192, 217, 238);
 }
 
-#choice-container:hover{
+.choice-container:hover{
     cursor: pointer;
     background: #483ea5;
     color: white;
 }
 
-#choice-container > p{
+.choice-container > p{
     margin-left: 30px;
     font-size: 30px;
     line-height: 50px;

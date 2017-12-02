@@ -11,6 +11,7 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { CopyrightMarkComponent } from './copyright-mark/copyright-mark.component';
 import { TreeQuestionsComponent } from './tree-questions/tree-questions.component';
 import { ToolOverviewComponent } from './tool-overview/tool-overview.component';
+import { ToolComponent } from './tool/tool.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { ToolOverviewComponent } from './tool-overview/tool-overview.component';
     HomePageComponent,
     CopyrightMarkComponent,
     TreeQuestionsComponent,
-    ToolOverviewComponent
+    ToolOverviewComponent,
+    ToolComponent
   ],
   imports: [
     NgbModule.forRoot(),
