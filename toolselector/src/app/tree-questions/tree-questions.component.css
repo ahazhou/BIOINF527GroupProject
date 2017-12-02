@@ -40,7 +40,11 @@
     justify-content: center;
 }
 
-#back-reset-container > button{
+#back-reset-container > a{
+    text-decoration: none;
+}
+
+#back-reset-container > a > div{
     width: 100px;
     height: 50px;
     border: none;
@@ -48,20 +52,22 @@
     color: white;
     margin: auto 10px;
     cursor: pointer;
+    text-align: center;
+    line-height: 50px;
 }
 
-#back-reset-container > button:nth-child(1){
+#back-reset-container > a:nth-child(1) > div{
     background: rgb(255, 131, 131);
 }
 
-#back-reset-container > button:nth-child(2){
+#back-reset-container > a:nth-child(2) > div{
     background: rgb(131, 164, 255);
 }
 
-#back-reset-container > button:nth-child(1):hover{
+#back-reset-container > a:nth-child(1) > div:hover{
     background: red;
 }
 
-#back-reset-container > button:nth-child(2):hover{
+#back-reset-container > a:nth-child(2) > div:hover{
     background: blue;
 }
