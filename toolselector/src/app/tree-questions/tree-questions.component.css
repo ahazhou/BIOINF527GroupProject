@@ -17,6 +17,8 @@
     min-height: 50px;
     margin: 5px 10px;
     background: rgb(192, 217, 238);
+    display: flex;
+    align-items: center;
 }
 
 .choice-container:hover{
@@ -26,9 +28,9 @@
 }
 
 .choice-container > p{
-    margin-left: 30px;
-    font-size: 30px;
-    line-height: 50px;
+    margin: 5px 30px;
+    font-size: 20px;
+    vertical-align: center;
 }
 
 #back-reset-container{
@@ -44,30 +46,30 @@
     text-decoration: none;
 }
 
-#back-reset-container > a > div{
+#back-reset-container > div,a > div{
     width: 100px;
     height: 50px;
     border: none;
     font-size: 20px;
     color: white;
-    margin: auto 10px;
+    margin: 0px 10px;
     cursor: pointer;
     text-align: center;
     line-height: 50px;
 }
 
-#back-reset-container > a:nth-child(1) > div{
+#back-reset-container > a > div{
     background: rgb(255, 131, 131);
 }
 
-#back-reset-container > a:nth-child(2) > div{
+#back-reset-container > div{
     background: rgb(131, 164, 255);
 }
 
-#back-reset-container > a:nth-child(1) > div:hover{
+#back-reset-container > a > div:hover{
     background: red;
 }
 
-#back-reset-container > a:nth-child(2) > div:hover{
+#back-reset-container > div:hover{
     background: blue;
 }

@@ -12,7 +12,7 @@ import { NotavailableyetComponent } from './notavailableyet/notavailableyet.comp
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
-  { path: 'tool', component: ToolComponent },
+  { path: 'tool/:id', component: ToolComponent },
   { path: 'tool-overview', component: ToolOverviewComponent },
   { path: 'tree-questions', component: TreeQuestionsComponent },
   { path: 'home', component: HomePageComponent },

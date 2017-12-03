@@ -1,5 +1,5 @@
 <div id="questions-container">
-  <h1>{{question.title}}</h1>
+  <h1>{{questionNumber}}.) {{question.title}}</h1>
   <br>
   <div class="choice-container" *ngFor="let choice of question.choices; let i = index" (click)="changeQuestion(i,question.name, false)">
     <p>{{choice}}</p>
@@ -10,5 +10,5 @@
 </div>
 <div id="back-reset-container">
   <a href="/home"><div>Reset</div></a>
-  <a><div>Previous</div></a>
+  <div (click)="previousQuestion(question)">Previous</div>
 </div>
