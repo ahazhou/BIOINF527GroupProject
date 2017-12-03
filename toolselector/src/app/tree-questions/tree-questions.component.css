@@ -17,6 +17,8 @@
     min-height: 50px;
     margin: 5px 10px;
     background: rgb(192, 217, 238);
+    display: flex;
+    align-items: center;
 }
 
 .choice-container:hover{
@@ -26,9 +28,9 @@
 }
 
 .choice-container > p{
-    margin-left: 30px;
-    font-size: 30px;
-    line-height: 50px;
+    margin: 5px 30px;
+    font-size: 20px;
+    vertical-align: center;
 }
 
 #back-reset-container{

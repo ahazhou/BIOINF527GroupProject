@@ -1,5 +1,5 @@
 <div id="questions-container">
-  <h1>{{question.title}}</h1>
+  <h1>{{questionNumber}}.) {{question.title}}</h1>
   <br>
   <div class="choice-container" *ngFor="let choice of question.choices; let i = index" (click)="changeQuestion(i,question.name, false)">
     <p>{{choice}}</p>
