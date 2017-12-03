@@ -111,11 +111,14 @@ export class TreeQuestionsComponent implements OnInit {
   }
 
   questionNumber: number
-  question = this.q0
+  question: any
+  fadeDiv: any
   constructor(private router: Router){}
 
   ngOnInit() {
+    this.question = this.q0
     this.questionNumber = 1
+    
   }
 
 }
