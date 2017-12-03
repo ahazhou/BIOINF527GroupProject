@@ -17,3 +17,12 @@ nav > div > ul > li:hover{
     background: #d6dbe9;
     color: #a7a7a7;
 }
+
+nav > button{
+    cursor: pointer;
+    border: none;
+}
+
+nav > button:hover{
+    background: #d6dbe9;
+}
