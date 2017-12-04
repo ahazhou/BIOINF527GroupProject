@@ -90,7 +90,7 @@ export class TreeQuestionsComponent implements OnInit {
   public changeQuestion = (index, name, isnone) =>{
     this.questionNumber++
     if(isnone){
-      window.location.href = "/not-available-yet"
+      this.router.navigate(["/not-available-yet"])
     }
     else if(this[String(name+index)] == null){
       this.router.navigate(['/tool', this[name].id[index]])
