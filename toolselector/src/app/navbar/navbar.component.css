@@ -5,6 +5,7 @@ nav{
     -moz-box-shadow:    1px 1px 3px 3px #ccc;
     -webkit-box-shadow: 1px 1px 3px 3px #ccc;
     box-shadow:         1px 1px 3px 3px #ccc;
+    z-index: 10;
 }
 nav > a{
     font-size: 30px;
@@ -66,4 +67,10 @@ nav > button{
 
 nav > button:hover{
     background: #d6dbe9;
+}
+
+@media (max-width: 991px){
+    nav > div > ul > li{
+        width: 100%;
+    }
 }
