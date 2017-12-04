@@ -1,16 +1,10 @@
 <div id="tool-overview-container">
   <h1>Tool Overviews</h1>
-  <div>
-    <h2>Tool1</h2>
-    <a routerLinkActive="active" routerLink='/tool'><img src="https://goo.gl/Gj9bLa"/></a>
-  </div>
-  <div>
-    <h2>Tool1</h2>
-    <a routerLinkActive="active" routerLink='/tool'><img src="https://goo.gl/Gj9bLa"/></a>
-  </div>
-  <div>
-    <h2>Tool1</h2>
-    <a routerLinkActive="active" routerLink='/tool'><img src="https://goo.gl/Gj9bLa"/></a>
+  <div class="tool-container" *ngFor="let toolname of toolnames" >
+    <h2>{{toolname}}</h2>
+    <div>
+      <a routerLinkActive="active" [routerLink]="['/tool', toolname]"><div><h1>More Info</h1></div></a>
+      <a href=""><div><h1>Source</h1></div></a>
+    </div>
   </div>
 </div>
-<h6>Click an image to learn more about a tool</h6>
