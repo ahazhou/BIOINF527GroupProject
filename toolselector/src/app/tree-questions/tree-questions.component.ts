@@ -75,7 +75,7 @@ export class TreeQuestionsComponent implements OnInit {
     id: ["Bowtie", "BWA", "BLAST"]
   }
   public q0010 = {
-    name: "q0011",
+    name: "q0010",
     title: "What sequencing platform are you using?",
     choices: ["Illumina", "Thermo Fisher Scientific", "Oxford Nanopore", "Roche/454 Life Sciences"],
     id: ["Alta-cyclic", "FlowgramFixer", "DeepNano", "PyroBayes"]
