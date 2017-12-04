@@ -1,10 +1,10 @@
 <div id="tool-overview-container">
   <h1>Tool Overviews</h1>
-  <div class="tool-container" *ngFor="let toolname of toolnames" >
+  <div class="tool-container" *ngFor="let toolname of toolnames; let i=index" >
     <h2>{{toolname}}</h2>
     <div>
-      <a routerLinkActive="active" [routerLink]="['/tool', toolname]"><div><h1>More Info</h1></div></a>
-      <a href=""><div><h1>Source</h1></div></a>
+      <a routerLinkActive="active" [routerLink]="['/tool', idnames[i]]"><div><h1>More Info</h1></div></a>
+      <a target="_blank" href="{{sources[i]}}"><div><h1>Source</h1></div></a>
     </div>
   </div>
 </div>
