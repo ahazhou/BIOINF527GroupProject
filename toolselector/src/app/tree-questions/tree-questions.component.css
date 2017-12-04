@@ -5,6 +5,7 @@
     min-width: 300px;
     background: rgba(192, 192, 202, 0);
     padding-top: 130px;
+    padding-bottom: 50px;
 }
 
 #questions-container > h1:first-of-type{
@@ -13,18 +14,22 @@
 }
 
 .choice-container{
-    width: 100%;
+    width: calc(100% - 10px);
     min-height: 50px;
-    margin: 5px 10px;
+    margin: 5px;
     background: rgb(192, 217, 238);
     display: flex;
     align-items: center;
+    -webkit-transition-duration: 0.2s;
+    transition-duration: 0.2s;
 }
 
 .choice-container:hover{
     cursor: pointer;
     background: #483ea5;
     color: white;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
 }
 
 .choice-container > p{
@@ -59,17 +64,25 @@
 }
 
 #back-reset-container > a > div{
-    background: rgb(255, 131, 131);
+    background: rgba(255, 131, 131, 0.466);
+    -webkit-transition-duration: 0.2s;
+    transition-duration: 0.2s;
 }
 
 #back-reset-container > div{
-    background: rgb(131, 164, 255);
+    background: rgba(131, 164, 255, 0.466);
+    -webkit-transition-duration: 0.2s;
+    transition-duration: 0.2s;
 }
 
 #back-reset-container > a > div:hover{
     background: red;
+    -webkit-transition-duration: 0.2s;
+    transition-duration: 0.2s;
 }
 
 #back-reset-container > div:hover{
-    background: blue;
+    background: #483ea5;
+    -webkit-transition-duration: 0.2s;
+    transition-duration: 0.2s;
 }

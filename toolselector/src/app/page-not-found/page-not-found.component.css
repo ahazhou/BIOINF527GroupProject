@@ -1,16 +1,22 @@
-button{
-    background: #ca9b9b;
+div{
+    z-index: -1;
+    background: transparent;
     position: absolute;
     margin: auto;
     top:0;left:0;right:0;bottom:0;
-    width: 500px;
-    height: 150px;
-    cursor: pointer;
     border: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 h1{
-    color: white;
-    text-align: center;
-    line-height: 150px;
+    color: red;
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+    cursor: default;
+    margin: 30px;
 }

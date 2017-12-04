@@ -3,6 +3,7 @@
     width: 100%;
     height: 100%;
     max-width: 1080px;
+    padding-top: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -11,11 +12,12 @@
 #tool-display-container > div{
     max-width: 1080px;
     width: 100%;
+    margin: 20px;
 }
 
 #tool-display-container > div > a > img{
     display: block;
-    width: 50%;
+    width: 70%;
     margin: 0px auto 60px auto;
     -webkit-transition-duration: 0.3s;
     transition-duration: 0.3s;
@@ -26,8 +28,8 @@
     -ms-transform: scale(1.03, 1.03); /* IE 9 */
     -webkit-transform: scale(1.03, 1.03); /* Safari */
     transform: scale(1.03, 1.03);
-    -webkit-filter: brightness(1.3);
-    filter: brightness(1.3);
+    -webkit-filter: brightness(1.1);
+    filter: brightness(1.1);
     -webkit-transition-duration: 0.3s;
     transition-duration: 0.3s;
 }
@@ -43,11 +45,33 @@
 #name-link{
     height: 50px;
     margin-bottom: 10px;
+    position: relative;
 }
 
 #name-link > h1{
     float: left;
     font-size: 40px;
+}
+
+#name-link > h1:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    visibility: visible;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+#tool-display-container > div > div:hover > #name-link > h1:before{
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
 }
 
 #name-link > a{
@@ -71,6 +95,8 @@
     border-radius: 30px;
     -ms-radius: 30px;
     -o-radius: 30px;
+    -webkit-transition-duration: 0.25s;
+    transition-duration: 0.25s;
 }
 
 #name-link > a > div > h1{
@@ -81,4 +107,6 @@
 #name-link > a > div:hover{
     background: #455FA3;
     color: white;
+    -webkit-transition-duration: 0.1s;
+    transition-duration: 0.1s;
 }

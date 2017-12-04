@@ -1,21 +1,62 @@
 nav{
     position: absolute;
     width: 100%;
+    background: #092966 !important;
+    -moz-box-shadow:    1px 1px 3px 3px #ccc;
+    -webkit-box-shadow: 1px 1px 3px 3px #ccc;
+    box-shadow:         1px 1px 3px 3px #ccc;
 }
 nav > a{
     font-size: 30px;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    color: white;
 }
 nav > a:hover{
     color: #a7a7a7;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
 }
+
+.nav-link{
+    color: white !important;
+}
+
+.navbar-toggler{
+    -webkit-transition: border 0.3s;
+    transition: border 0.3s;
+}
+
+.navbar-toggler:hover{
+    background: transparent !important;
+    border: 1px solid white;
+    margin: -1px;
+    -webkit-transition: border-color 0.3s;
+    transition: border-color 0.3s;
+}
+
 nav > div > ul > li{
-    font-size: 30px;
+    width: 100px;
+    font-size: 20px;
     text-align: center;
-    margin-right: 20px;
+    margin-right: 10px;
+    -webkit-border-radius: 30px;
+    -khtml-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    -ms-radius: 30px;
+    -o-radius: 30px;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
 }
 nav > div > ul > li:hover{
     background: #d6dbe9;
-    color: #a7a7a7;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+
+nav > div > ul > li:hover > a{
+    color: #292929 !important;
 }
 
 nav > button{

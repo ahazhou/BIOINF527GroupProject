@@ -2,7 +2,7 @@
     position: absolute;
     top:0;left:0;right:0;bottom:0;
     margin: auto;
-    width: 500px;
+    max-width: 500px;
     height: 300px;
 }
 
@@ -21,10 +21,20 @@
     border: none;
     background: #62dd6d;
     margin: 50px auto auto auto;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
 }
 
 #home-page-container > div:hover{
-    background: #62dd6c94;
+    background: #c7f1ca94;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+
+#home-page-container > div:hover h5{
+    color: #62dd6d;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
 }
 
 #home-page-container > div > a, h5{
@@ -34,4 +44,6 @@
     text-align: center;
     line-height: 70px;
     margin: 0px;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
 }
