@@ -1,8 +1,12 @@
 <div id="tool-display-container">
-	<img src={{toolpic}}/>
-	<div id="text">
-		<h1>{{tooldisplayname}}</h1>
-		<p>{{tooldescription}}</p>
-		<a href={{toollink}}> Click here for {{tooldisplayname}}'s website </a>
+	<div>
+		<a target="_blank" routerLinkActive="active" routerLink="{{toollink}}"><img src={{toolpic}}/></a>
+		<div>
+			<div id="name-link">
+				<h1>{{tooldisplayname}}</h1>
+				<a target="_blank" routerLinkActive="active" routerLink={{toollink}}><div><h1>More Info</h1></div></a>
+			</div>
+			<p>{{tooldescription}}</p>
+		</div>
 	</div>
 </div>

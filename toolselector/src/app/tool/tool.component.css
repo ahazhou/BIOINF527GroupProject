@@ -1,34 +1,84 @@
 #tool-display-container{
     margin: auto;
-    padding-top: 100px;
     width: 100%;
+    height: 100%;
     max-width: 1080px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-#tool-display-container > img{
+#tool-display-container > div{
+    max-width: 1080px;
+    width: 100%;
+}
+
+#tool-display-container > div > a > img{
     display: block;
-    max-width: 50%;
-    float: center;
-    padding: 30px;
+    width: 50%;
+    margin: 0px auto 60px auto;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    background: #868686;
 }
 
-#tool-display-container > div > div{
-	padding-top: 50px;
+#tool-display-container > div > a > img:hover{
+    -ms-transform: scale(1.03, 1.03); /* IE 9 */
+    -webkit-transform: scale(1.03, 1.03); /* Safari */
+    transform: scale(1.03, 1.03);
+    -webkit-filter: brightness(1.3);
+    filter: brightness(1.3);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
 }
 
-#tool-display-container > div > div > h1{
-    text-align: center;
-    float: center;
-    padding: 50px;
+#tool-overview-container > div > div{
+    position: relative;
 }
 
-#tool-display-container > div > div > p{
-	float: center;
+#tool-overview-container > div > div > div{
+    display: inline-block;
 }
 
-#tool-overview-container > div{
-    width: calc(50% - 40px);
+#name-link{
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+#name-link > h1{
     float: left;
-    margin: 25px;
-    background: rgba(228, 232, 235, 0);
+    font-size: 40px;
+}
+
+#name-link > a{
+    text-decoration: none;
+    float: right;
+    margin: auto;
+    cursor: default;
+}
+
+#name-link > a > div{
+    width: 100px;
+    height: 30px;
+    border: 3px solid #455FA3;
+    text-align: center;
+    margin: 13px;
+    color: #455FA3;
+    cursor: pointer;
+    -webkit-border-radius: 30px;
+    -khtml-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    -ms-radius: 30px;
+    -o-radius: 30px;
+}
+
+#name-link > a > div > h1{
+    line-height: 23px;
+    font-size: 15px;
+}
+
+#name-link > a > div:hover{
+    background: #455FA3;
+    color: white;
 }
